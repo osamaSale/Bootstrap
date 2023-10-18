@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css.css" />
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-theme="light">
+    <header>
+        <div class="p-3 text-center  border-bottom">
+            <div class="container-fluid">
+                <div class="row gy-3">
+                    <div class="col-lg-2 col-sm-4 col-4">
+                        <a href="https://mdbootstrap.com/" class="float-start">
+                            <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="35" />
+                        </a>
+                    </div>
+                    <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+                        <div class="d-flex float-end">
+                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                                class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center"> <i
+                                    class="fas fa-user-alt m-1 me-md-2"></i>
+                                <p class="d-none d-md-block mb-0">Sign in</p>
+                            </a>
+                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                                class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center"> <i
+                                    class="fas fa-heart m-1 me-md-2"></i>
+                                <p class="d-none d-md-block mb-0">Wishlist</p>
+                            </a>
+                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                                class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center"> <i
+                                    class="fas fa-shopping-cart m-1 me-md-2"></i>
+                                <p class="d-none d-md-block mb-0">My cart</p>
+                            </a>
+                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                                class=" border rounded py-1 px-3 nav-link d-flex align-items-center"> <i
+                                    class="fas fa-user-alt m-1 me-md-2"></i>
+                                <p class="d-none d-md-block mb-0">Sign in</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <div class="input-group float-center">
+                            <div class="input-group">
+                                <input type="text" class="form-control  rounded-start"
+                                    placeholder="Search Name Iphone ...." />
+                                <button class="me-1 border py-1 px-3 nav-link d-flex align-items-center" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary border-bottom">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-body-primary">
+                    <div class="container-fluid ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon text-light"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown link
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a onclick="checkMode()"
+                                class="border rounded py-1 px-3 nav-link d-flex align-items-center text-light">
+                                <p class="d-none d-md-block mb-0" id="myText"></p>
+                            </a>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <script>
+            let element = document.body
+            let mode = element.dataset.bsTheme
+            let check = document.getElementById("myText").innerHTML = `<i class="fa-regular fa-moon m-1 me-md-2"></i>${mode}`
+            function checkMode() {
+                element.dataset.bsTheme = element.dataset.bsTheme === "light" ? "dark" : "light"
+                localStorage.setItem("mode", element.dataset.bsTheme)
+                document.getElementById("myText").innerHTML = `<i class="fa-regular fa-moon m-1 me-md-2"></i>${mode}`
+            }
+            function darkModeOn() {
+                element.dataset.bsTheme = "dark"
+                localStorage.setItem("mode", element.dataset.bsTheme)
+            }
+
+            function darkModeOff() {
+                element.dataset.bsTheme = "light"
+                localStorage.setItem("mode", element.dataset.bsTheme)
+            }
+        </script>
+
+    </header>
+
+</body>
+
+</html>
