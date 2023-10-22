@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css" />
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+<body data-bs-theme="light">
+    <header>
+        <div class="p-3 text-center border-bottom">
+            <div class="container-fluid">
+                <div class="row gy-3">
+                    <div class="col-lg-2 col-sm-4 col-4">
+                        <a href="https://mdbootstrap.com/" class="float-start">
+                            <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="35" />
+                        </a>
+                    </div>
+                    <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+                        <div class="d-flex float-end">
+                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                                class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center"> <i
+                                    class="fas fa-user-alt m-1 me-md-2"></i>
+                                <p class="d-none d-md-block mb-0">Sign in</p>
+                            </a>
+                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                                class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center"> <i
+                                    class="fas fa-heart m-1 me-md-2"></i>
+                                <p class="d-none d-md-block mb-0">Wishlist</p>
+                            </a>
+                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                                class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center"> <i
+                                    class="fas fa-shopping-cart m-1 me-md-2"></i>
+                                <p class="d-none d-md-block mb-0">My cart</p>
+                            </a>
+                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                                class=" border rounded py-1 px-3 nav-link d-flex align-items-center"> <i
+                                    class="fas fa-user-alt m-1 me-md-2"></i>
+                                <p class="d-none d-md-block mb-0">Sign in</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <div class="input-group float-center">
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-start" placeholder="Search Name...." />
+                                <button class="me-1 border py-1 px-3 nav-link d-flex align-items-center" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary border-bottom">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-body-primary">
+                    <div class="container-fluid ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav text-white">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown link
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a onclick="checkMode()"
+                                class=" border rounded py-1 px-3 nav-link d-flex align-items-center text-light"> <i
+                                    class="fa-regular fa-moon m-1 me-md-2"></i>
+                                <p class="d-none d-md-block mb-0">Dark</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="mt-5">
+        <div class="p-3">
+            <div class="container-fluid">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div
+                                style="background: url(./image/slider-26.jpg)no-repeat; background-size: cover; border-radius: .5rem; background-position: center;">
+                                <div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center p-5">
+                                    <span class="badge text-bg-warning">Opening Sale Discount 50%</span>
+                                    <h2 class="text-black display-5 fw-bold mt-4">SuperMarket For Fresh Grocery </h2>
+                                    <p class="lead text-secondary">Introduced a new model for online grocery
+                                        shopping
+                                        and convenient home delivery.
+                                    </p>
+                                    <a href="#!" class="btn btn-dark mt-3">Shop Now <i
+                                            class="feather-icon icon-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class=" "
+                                style="background: url(./image/slider-23.jpg)no-repeat; background-size: cover; border-radius: .5rem; background-position: center;">
+                                <div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center p-5">
+                                    <span class="badge text-bg-warning">Free Shipping - orders over $100</span>
+                                    <h2 class="text-dark display-5 fw-bold mt-4">Free Shipping on <br> orders over
+                                        <span class="text-primary">$100</span>
+                                    </h2>
+                                    <p class="lead text-secondary">Free Shipping to First-Time Customers Only,
+                                        After promotions and
+                                        discounts
+                                        are
+                                        applied.
+                                    </p>
+                                    <a href="#!" class="btn btn-dark mt-3">Shop Now <i
+                                            class="feather-icon icon-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="p-3">
+            <div class="container-fluid">
+                <header class="mb-4">
+                    <h4>New Products</h4>
+                </header>
+                <hr />
+                <div class="row g-4 row-cols-lg-5 row-cols-2 row-cols-md-3">
+                    <div class="col">
+                        <div class="card card-product">
+                            <div class="card-body">
+                                <div class="text-center  position-relative ">
+                                    <a href="../../pages/shop-single.html">
+                                        <img src="./image/1 (1).png" alt="Grocery Ecommerce Template"
+                                            class="mb-3 img-fluid" /></a>
+                                    <div class="card-product-action">
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fa fa-eye"
+                                                data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i></a>
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="tooltip"
+                                            data-bs-html="true" title="Wishlist"><i class="fa fa-heart"></i></a>
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="tooltip"
+                                            data-bs-html="true" title="Compare"><i
+                                                class="fa-solid fa-arrows-left-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="text-small mb-1"><a href="#!"
+                                        class="text-decoration-none text-muted"><small>Fruits &
+                                            Vegetables</small></a>
+                                </div>
+                                <h2 class="fs-6"><a href="../../pages/shop-single.html"
+                                        class="text-inherit text-decoration-none">Golden Pineapple</a>
+                                </h2>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div>
+                                        <span class="text-secondary">$13</span>
+                                        <span class="text-decoration-line-through text-muted">$18</span>
+                                    </div>
+                                    <div>
+                                        <small class="text-warning me-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </small>
+                                        <span><small>4.5</small></span>
+                                    </div>
+                                </div>
+                                <div class="d-grid mt-2">
+                                    <button class="btn btn-primary ">
+                                        <i class="fa fa-plus m-1"></i> Add to Cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product">
+                            <div class="card-body">
+                                <div class="text-center  position-relative ">
+                                    <a href="../../pages/shop-single.html"><img src="./image/1 (2).png"
+                                            alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                                    <div class="card-product-action">
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fa fa-eye"
+                                                data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i></a>
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="tooltip"
+                                            data-bs-html="true" title="Wishlist"><i class="fa fa-heart"></i></a>
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="tooltip"
+                                            data-bs-html="true" title="Compare"><i
+                                                class="fa-solid fa-arrows-left-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="text-small mb-1"><a href="#!"
+                                        class="text-decoration-none text-muted"><small>Fruits &
+                                            Vegetables</small></a>
+                                </div>
+                                <h2 class="fs-6"><a href="../../pages/shop-single.html"
+                                        class="text-inherit text-decoration-none">Golden Pineapple</a>
+                                </h2>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div>
+                                        <span class="text-secondary">$13</span>
+                                        <span class="text-decoration-line-through text-muted">$18</span>
+                                    </div>
+                                    <div>
+                                        <small class="text-warning me-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </small>
+                                        <span><small>4.5</small></span>
+                                    </div>
+                                </div>
+                                <div class="d-grid mt-2">
+                                    <button class="btn btn-primary ">
+                                        <i class="fa fa-plus m-1"></i> Add to Cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product">
+                            <div class="card-body">
+                                <div class="text-center  position-relative ">
+                                    <a href="../../pages/shop-single.html"><img src="./image/1 (3).png"
+                                            alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                                    <div class="card-product-action">
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fa fa-eye"
+                                                data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i></a>
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="tooltip"
+                                            data-bs-html="true" title="Wishlist"><i class="fa fa-heart"></i></a>
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="tooltip"
+                                            data-bs-html="true" title="Compare"><i
+                                                class="fa-solid fa-arrows-left-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="text-small mb-1"><a href="#!"
+                                        class="text-decoration-none text-muted"><small>Fruits &
+                                            Vegetables</small></a>
+                                </div>
+                                <h2 class="fs-6"><a href="../../pages/shop-single.html"
+                                        class="text-inherit text-decoration-none">Golden Pineapple</a>
+                                </h2>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div>
+                                        <span class="text-secondary">$13</span>
+                                        <span class="text-decoration-line-through text-muted">$18</span>
+                                    </div>
+                                    <div>
+                                        <small class="text-warning me-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </small>
+                                        <span><small>4.5</small></span>
+                                    </div>
+                                </div>
+                                <div class="d-grid mt-2">
+                                    <button class="btn btn-primary ">
+                                        <i class="fa fa-plus m-1"></i> Add to Cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product">
+                            <div class="card-body">
+                                <div class="text-center  position-relative ">
+                                    <a href="../../pages/shop-single.html"><img src="./image/1 (3).png"
+                                            alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                                    <div class="card-product-action">
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fa fa-eye"
+                                                data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i></a>
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="tooltip"
+                                            data-bs-html="true" title="Wishlist"><i class="fa fa-heart"></i></a>
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="tooltip"
+                                            data-bs-html="true" title="Compare"><i
+                                                class="fa-solid fa-arrows-left-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="text-small mb-1"><a href="#!"
+                                        class="text-decoration-none text-muted"><small>Fruits &
+                                            Vegetables</small></a>
+                                </div>
+                                <h2 class="fs-6"><a href="../../pages/shop-single.html"
+                                        class="text-inherit text-decoration-none">Golden Pineapple</a>
+                                </h2>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div>
+                                        <span class="text-secondary">$13</span>
+                                        <span class="text-decoration-line-through text-muted">$18</span>
+                                    </div>
+                                    <div>
+                                        <small class="text-warning me-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </small>
+                                        <span><small>4.5</small></span>
+                                    </div>
+                                </div>
+                                <div class="d-grid mt-2">
+                                    <button class="btn btn-primary ">
+                                        <i class="fa fa-plus m-1"></i> Add to Cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product">
+                            <div class="card-body">
+                                <div class="text-center  position-relative ">
+                                    <a href="../../pages/shop-single.html"><img src="./image/1 (3).png"
+                                            alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                                    <div class="card-product-action">
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="modal"
+                                            data-bs-target="#quickViewModal"><i class="fa fa-eye"
+                                                data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i></a>
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="tooltip"
+                                            data-bs-html="true" title="Wishlist"><i class="fa fa-heart"></i></a>
+                                        <a href="#!" class="btn-action text-decoration-none" data-bs-toggle="tooltip"
+                                            data-bs-html="true" title="Compare"><i
+                                                class="fa-solid fa-arrows-left-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="text-small mb-1"><a href="#!"
+                                        class="text-decoration-none text-muted"><small>Fruits &
+                                            Vegetables</small></a>
+                                </div>
+                                <h2 class="fs-6"><a href="../../pages/shop-single.html"
+                                        class="text-inherit text-decoration-none">Golden Pineapple</a>
+                                </h2>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div>
+                                        <span class="text-secondary">$13</span>
+                                        <span class="text-decoration-line-through text-muted">$18</span>
+                                    </div>
+                                    <div>
+                                        <small class="text-warning me-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </small>
+                                        <span><small>4.5</small></span>
+                                    </div>
+                                </div>
+                                <div class="d-grid mt-2">
+                                    <button class="btn btn-primary ">
+                                        <i class="fa fa-plus m-1"></i> Add to Cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="p-3">
+            <div class="container-fluid">
+                <header class="mb-4">
+                    <h4>Why Choose us</h4>
+                </header>
+                <hr />
+                <div class="row g-4 row-cols-lg-5 row-cols-1 row-cols-md-3 mt-3">
+                    <div class="col">
+                        <figure class="d-flex align-items-center mb-4">
+                            <span class="rounded-circle  p-3 d-flex me-2 mb-2">
+                                <i class="fas fa-camera-retro fa-2x fa-fw text-primary floating"></i>
+                            </span>
+                            <figcaption class="info">
+                                <h6 class="title">Reasonable prices</h6>
+                                <p class="text-body-secondary">Lorem ipsum dolor </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col d-flex align-items-center">
+                        <figure class="d-flex align-items-center mb-4">
+                            <span class="rounded-circle  p-3 d-flex me-2 mb-2">
+                                <i class="fas fa-star fa-2x fa-fw text-primary floating"></i>
+                            </span>
+                            <figcaption class="info">
+                                <h6 class="title">Best quality</h6>
+                                <p class="text-body-secondary">Lorem ipsum dolor </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col">
+                        <figure class="d-flex align-items-center mb-4">
+                            <span class="rounded-circle  p-3 d-flex me-2 mb-2">
+                                <i class="fas fa-plane fa-2x fa-fw text-primary floating"></i>
+                            </span>
+                            <figcaption class="info">
+                                <h6 class="title">Worldwide shipping</h6>
+                                <p class="text-body-secondary">Lorem ipsum dolor</p>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col">
+                        <figure class="d-flex align-items-center mb-4">
+                            <span class="rounded-circle  p-3 d-flex me-2 mb-2">
+                                <i class="fas fa-users fa-2x fa-fw text-primary floating"></i>
+                            </span>
+                            <figcaption class="info">
+                                <h6 class="title">Customer satisfaction</h6>
+                                <p class="text-body-secondary">Lorem ipsum dolor </p>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col">
+                        <figure class="d-flex align-items-center mb-4">
+                            <span class="rounded-circle  p-3 d-flex me-2 mb-2">
+                                <i class="fas fa-thumbs-up fa-2x fa-fw text-primary floating"></i>
+                            </span>
+                            <figcaption class="info">
+                                <h6 class="title">Happy customers</h6>
+                                <p class="text-body-secondary">Lorem ipsum dolor </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="p-3">
+            <div class="container-fluid">
+                <header class="mb-4">
+                    <h3>Blog posts</h3>
+                </header>
+                <hr />
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <article>
+                            <a href="#" class="img-fluid">
+                                <img class="rounded w-100"
+                                    src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/posts/1.webp"
+                                    style="object-fit: cover;" height="160" />
+                            </a>
+                            <div class="mt-2 text-muted small d-block mb-1">
+                                <span>
+                                    <i class="fa fa-calendar-alt fa-sm"></i>
+                                    23.12.2022
+                                </span>
+                                <a class="text-decoration-none">
+                                    <h6>How to promote brands</h6>
+                                </a>
+                                <p>When you enter into any new area of science, you almost reach</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <article>
+                            <a href="#" class="img-fluid">
+                                <img class="rounded w-100"
+                                    src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/posts/2.webp"
+                                    style="object-fit: cover;" height="160" />
+                            </a>
+                            <div class="mt-2 text-muted small d-block mb-1">
+                                <span>
+                                    <i class="fa fa-calendar-alt fa-sm"></i>
+                                    13.12.2022
+                                </span>
+                                <a class="text-decoration-none">
+                                    <h6>How we handle shipping</h6>
+                                </a>
+                                <p>When you enter into any new area of science, you almost reach</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <article>
+                            <a href="#" class="img-fluid">
+                                <img class="rounded w-100"
+                                    src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/posts/3.webp"
+                                    style="object-fit: cover;" height="160" />
+                            </a>
+                            <div class="mt-2 text-muted small d-block mb-1">
+                                <span>
+                                    <i class="fa fa-calendar-alt fa-sm"></i>
+                                    25.11.2022
+                                </span>
+                                <a class="text-decoration-none">
+                                    <h6>How to promote brands</h6>
+                                </a>
+                                <p>When you enter into any new area of science, you almost reach</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <article>
+                            <a href="#" class="img-fluid">
+                                <img class="rounded w-100"
+                                    src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/posts/4.webp"
+                                    style="object-fit: cover;" height="160" />
+                            </a>
+                            <div class="mt-2 text-muted small d-block mb-1">
+                                <span>
+                                    <i class="fa fa-calendar-alt fa-sm"></i>
+                                    03.09.2022
+                                </span>
+                                <a class="text-decoration-none mt-2">
+                                    <h6>Success story of sellers</h6>
+                                </a>
+                                <p>When you enter into any new area of science, you almost reach</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class=" mt-5" style="background-color: #0a4275 ; color:white">
+        <div class="p-3">
+            <div class="container-fluid text-center text-md-start pt-4 pb-4">
+                <div class="row mt-3">
+                    <div class="col-12 col-lg-3 col-sm-12 mb-2">
+                        <a href="https://mdbootstrap.com/" target="_blank" class="">
+                            <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="35" />
+                        </a>
+                        <p class="mt-3">
+                            © 2023 Copyright: MDBootstrap.com
+                        </p>
+                        <div>
+                            <i class="fab fa-lg fa-cc-visa"></i>
+                            <i class="fab fa-lg fa-cc-amex"></i>
+                            <i class="fab fa-lg fa-cc-mastercard"></i>
+                            <i class="fab fa-lg fa-cc-paypal"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="text-uppercase fw-bold mb-2">
+                            Store
+                        </h6>
+                        <ul class="list-unstyled mb-4">
+                            <li><a class="text-decoration-none text-white" href="#">About us</a></li>
+                            <li><a class="text-decoration-none text-white" href="#">Find store</a></li>
+                            <li><a class="text-decoration-none text-white" href="#">Categories</a></li>
+                            <li><a class="text-decoration-none text-white" href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h6 class="text-uppercase fw-bold mb-2">
+                            Information
+                        </h6>
+                        <ul class="list-unstyled mb-4">
+                            <li><a class="text-decoration-none text-white" href="#">Help center</a></li>
+                            <li><a class="text-decoration-none text-white" href="#">Money refund</a></li>
+                            <li><a class="text-decoration-none text-white" href="#">Shipping info</a></li>
+                            <li><a class="text-decoration-none text-white" href="#">Refunds</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-3">
+                        <h6 class="text-uppercase fw-bold mb-2">Newsletter</h6>
+                        <p>Stay in touch with latest updates about our products and offers</p>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control border" placeholder="Email" aria-label="Email"
+                                aria-describedby="button-addon2" />
+                            <button class="btn btn-danger  shadow-0" type="button">
+                                Join
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let element = document.body
+        function checkMode() {
+            element.dataset.bsTheme = element.dataset.bsTheme === "light" ? "dark" : "light"
+            localStorage.setItem("mode", element.dataset.bsTheme)
+        }
+        function darkModeOn() {
+            element.dataset.bsTheme = "dark"
+            localStorage.setItem("mode", element.dataset.bsTheme)
+        }
+
+        function darkModeOff() {
+            element.dataset.bsTheme = "light"
+            localStorage.setItem("mode", element.dataset.bsTheme)
+        }
+    </script>
+
+
+</body>
+
+</html>
