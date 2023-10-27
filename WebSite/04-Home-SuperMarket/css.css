@@ -26649,10 +26649,10 @@ fieldset:disabled .btn {
 .navbar .dropdown .dropdown-toggle:after {
   background-repeat: no-repeat;
   background-size: 0.625rem 0.625rem;
- /*  border: none; */
+  /*  border: none; */
   color: var(--fc-gray-600);
   /* content: "\f12f"; */
- /*  float: right; */
+  /*  float: right; */
   font-family: feather-icons !important;
   line-height: 2;
   margin-left: 0.375rem;
@@ -27109,7 +27109,7 @@ h3 {
 }
 
 .dropdown-toggle:after {
- /*  border: 0;
+  /*  border: 0;
   content: "\f12f";
   float: right; */
   font-family: feather-icons !important;
@@ -27136,7 +27136,7 @@ h3 {
 
 .dropstart .dropdown-toggle:before {
   border: 0;
-/*   content: "\f130"; */
+  /*   content: "\f130"; */
   display: inline-block;
   font-family: feather-icons !important;
   margin-right: 0.255em;
