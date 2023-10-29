@@ -372,7 +372,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--fc-heading-color, inherit);
+ 
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 0.5rem;
@@ -430,6 +430,7 @@ h4 {
 .h5,
 h5 {
   font-size: 1.09375rem;
+  color: var(--fc-body-color);
 }
 
 .h6,
@@ -919,8 +920,8 @@ progress {
   --fc-gutter-y: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-left: calc(var(--fc-gutter-x) * 0.5);
-  padding-right: calc(var(--fc-gutter-x) * 0.5);
+  padding-left: calc(var(--fc-gutter-x) * 1.5);
+  padding-right: calc(var(--fc-gutter-x) * 1.5);
   width: 100%;
 }
 
@@ -3293,7 +3294,7 @@ progress {
 }
 
 .form-label {
-  color: #3d4f58;
+  color: var(--fc-body-color);
   margin-bottom: 0.5rem;
 }
 
@@ -3311,7 +3312,10 @@ progress {
   padding-bottom: calc(0.5rem + 1px);
   padding-top: calc(0.5rem + 1px);
 }
-
+.form-control-color:not(:disabled):not([readonly]) {
+  cursor: pointer;
+  color: var(--fc-body-color);
+}
 .col-form-label-sm {
   font-size: 0.765625rem;
   padding-bottom: calc(0.25rem + 1px);
@@ -3332,7 +3336,7 @@ progress {
   background-color: #fff;
   border: 1px solid #dfe2e1;
   border-radius: 0.5rem;
-  color: #21313c;
+  color: var(--fc-body-color);
   display: block;
   font-size: 0.875rem;
   font-weight: 500;
@@ -6580,7 +6584,7 @@ fieldset:disabled .btn {
   --fc-card-group-margin: 1rem;
   word-wrap: break-word;
   background-clip: border-box;
-  background-color: var(--fc-card-bg);
+  background-color: var(--fc-body-bg);
   border: var(--fc-card-border-width) solid var(--fc-card-border-color);
   border-radius: var(--fc-card-border-radius);
   color: var(--fc-body-color);
@@ -8252,10 +8256,10 @@ fieldset:disabled .btn {
 
 .modal-content {
   background-clip: padding-box;
-  background-color: var(--fc-modal-bg);
+  background-color: var(--fc-body-bg);
   border: var(--fc-modal-border-width) solid var(--fc-modal-border-color);
   border-radius: var(--fc-modal-border-radius);
-  color: var(--fc-modal-color);
+  color: var(--fc-body-color);
   display: flex;
   flex-direction: column;
   outline: 0;
@@ -26557,9 +26561,9 @@ fieldset:disabled .btn {
   }
 }
 
-.navbar {
+/* .navbar {
   padding: 0.625rem 1rem;
-}
+} */
 
 .navbar .navbar-brand {
   padding-bottom: 0.2rem;
@@ -26662,7 +26666,8 @@ fieldset:disabled .btn {
   border-radius: 0.5rem;
   box-shadow: 0 0 2px rgba(145, 158, 171, 0.2),
     0 12px 24px -4px rgba(145, 158, 171, 0.12);
-  color: var(--fc-gray-600);
+  color: var(--fc-body-color);
+  background-color: var(--fc-body-bg);
   line-height: 1.2rem;
   min-width: 12rem;
   top: 40px;
@@ -26698,9 +26703,9 @@ fieldset:disabled .btn {
   top: -35px;
 }
 
-.navbar .navbar-right-wrap .list-group-item {
+/* .navbar .navbar-right-wrap .list-group-item {
   padding: 1rem 1.25rem;
-}
+} */
 
 .navbar .nav-badge {
   position: absolute;

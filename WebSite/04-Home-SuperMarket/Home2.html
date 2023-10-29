@@ -5,171 +5,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- icons -->
   <script src="https://kit.fontawesome.com/ae360af17e.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Theme CSS -->
   <link rel="stylesheet" href="./css.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 
-<body>
+<body data-bs-theme="light">
   <!-- Start Nabar -->
-  <header class="p-3">
-    <div class="container-fluid">
-      <div class="row w-100 align-items-center g-0 gx-lg-3">
-        <div class="col-xxl-9 col-lg-8">
-          <div class="d-flex align-items-center">
-            <a class="navbar-brand d-none d-lg-block">
-              <img src="./image/logo/freshcart-logo.svg" alt="eCommerce HTML Template">
+  <header class="border-bottom">
+    <div class="py-5">
+      <div class="container-fluid">
+        <div class="row gy-3">
+          <div class="col-xxl-2 col-lg-3">
+            <a class="navbar-brand  d-lg-block">
+              <img src="./assets/images/logo/freshcart-logo.svg" alt="eCommerce HTML Template">
             </a>
-            <div class=" w-100 ms-4  d-none d-lg-block ">
-              <form action="#">
-                <div class="input-group">
-                  <input type="text" aria-label="Last name" class="form-control w-45" placeholder="Search for products">
-                  <button class="input-group-text bg-transparent" type="submit">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </div>
-              </form>
+          </div>
+          <div class="col-xxl-5 col-lg-5  d-lg-block">
+            <div class="input-group">
+              <input class="form-control form-control-color rounded bg-transparent " type="text"
+                placeholder="Search for products">
+              <span class="input-group-append">
+                <button class="btn ms-n10" type="button">
+                  <i class="fas fa-search"></i>
+                </button>
+              </span>
             </div>
           </div>
-          <div class="d-flex justify-content-between w-100 d-lg-none">
-            <a class="navbar-brand">
-              <img src="./image/logo/freshcart-logo.svg" alt="eCommerce HTML Template">
-            </a>
-            <div class="d-flex align-items-center lh-1">
-              <div class="list-inline me-4">
-                <div class="list-inline-item">
-                  <a href="#!" class="text-muted" data-bs-toggle="modal" data-bs-target="#userModal">
-                    <i class="fa-solid fa-user"></i>
-                  </a>
-                </div>
-                <div class="list-inline-item">
-                  <a class="text-muted position-relative " data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    href="#offcanvasExample" role="button" aria-controls="offcanvasRight">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-shopping-bag">
-                      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                      <line x1="3" y1="6" x2="21" y2="6"></line>
-                      <path d="M16 10a4 4 0 0 1-8 0"></path>
-                    </svg>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
-                      1
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
+          
+          <div class="order-lg-last col-lg-5">
+            <div class="d-flex float-end">
 
-              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#navbar-default" aria-controls="navbar-default" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                  class="bi bi-text-indent-left text-primary" viewBox="0 0 16 16">
-                  <path
-                    d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm.646 2.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8 2.646 6.354a.5.5 0 0 1 0-.708zM7 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+              <a class="me-1 border rounded py-2 px-3 nav-link d-flex align-items-center" data-bs-toggle="modal"
+                data-bs-target="#userModal"> <i class="fas fa-user-alt m-1 me-md-2"></i>
+                <p class="d-none d-md-block mb-0">Sign in</p>
+              </a>
+              <a class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" > <i
+                  class="fas fa-heart m-1 me-md-2"></i>
+                <p class="d-none d-md-block mb-0">Wishlist</p>
+              </a>
+              <a class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" data-bs-target="#offcanvasRight" data-bs-toggle="offcanvas"> <i
+                  class="fas fa-shopping-cart m-1 me-md-2"></i>
+                <p class="d-none d-md-block mb-0">My Cart</p>
+              </a>
+
+              <a class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" onclick="checkMode()"> <i
+                  class="fa-regular fa-moon m-1 me-md-2"></i>
+                <p class="d-none d-md-block mb-0">Dark</p>
+              </a>
+              <button class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center d-lg-none navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-text-indent-left text-primary" viewBox="0 0 16 16">
+                  <path d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm.646 2.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8 2.646 6.354a.5.5 0 0 1 0-.708zM7 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
                 </svg>
               </button>
+             
+
             </div>
           </div>
-        </div>
-        <div class="col-xxl-3 col-lg-4 d-flex align-items-center ">
-          <button type="button" class="btn btn-outline-gray-400 text-muted d-none d-lg-block" data-bs-toggle="modal"
-            data-bs-target="#locationModal">
-            <i class="feather-icon icon-map-pin me-2"></i>Pick Location
-          </button>
-          <!-- <div class="list-inline ms-auto d-lg-block d-none">
-            <div class="list-inline-item">
-              <a href="../../pages/shop-wishlist.html" class="text-muted position-relative">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-heart">
-                  <path
-                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                  </path>
-                </svg>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
-                  5
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </a>
-            </div>
-            <div class="list-inline-item">
-              <a href="#!" class="text-muted" data-bs-toggle="modal" data-bs-target="#userModal">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-user">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </a>
-            </div>
-            <div class="list-inline-item">
-              <a class="text-muted position-relative " data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                href="#offcanvasExample" role="button" aria-controls="offcanvasRight">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-shopping-bag">
-                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                  <line x1="3" y1="6" x2="21" y2="6"></line>
-                  <path d="M16 10a4 4 0 0 1-8 0"></path>
-                </svg>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
-                  1
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </a>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
-  </header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-default">
-    <div class="container-fluid">
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar-default" aria-labelledby="navbar-defaultLabel">
-        <div class="offcanvas-header pb-1">
-          <a href="./index.html"><img src="./image/logo/freshcart-logo.svg" alt="eCommerce HTML Template"></a>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="d-block d-lg-none mb-4">
-            <form action="#">
-              <div class="input-group ">
-                <input class="form-control rounded" type="search" placeholder="Search for products">
-                <span class="input-group-append">
-                  <button class="btn bg-white border border-start-0 ms-n10 rounded-0 rounded-end" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-search">
-                      <circle cx="11" cy="11" r="8"></circle>
-                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                  </button>
-                </span>
-              </div>
-            </form>
-            <div class="mt-2">
-              <button type="button" class="btn  btn-outline-gray-400 text-muted w-100 " data-bs-toggle="modal"
-                data-bs-target="#locationModal">
-                <i class="feather-icon icon-map-pin me-2"></i>Pick Location
-              </button>
+    <div class="d-none d-lg-block">
+      <nav class="navbar navbar-expand-lg navbar-dark  bg-primary navbar-default">
+        <div class="container-fluid">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar-default"
+            aria-labelledby="navbar-defaultLabel">
+            <div class="offcanvas-header pb-1">
+              <a href="./index.html"><img src="./image/logo/freshcart-logo.svg" alt="eCommerce HTML Template"></a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </div>
-          <div class="d-block d-lg-none mb-4">
-            <a class="btn btn-primary w-100 d-flex justify-content-center align-items-center" data-bs-toggle="collapse"
-              href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-grid">
-                  <rect x="3" y="3" width="7" height="7"></rect>
-                  <rect x="14" y="3" width="7" height="7"></rect>
-                  <rect x="14" y="14" width="7" height="7"></rect>
-                  <rect x="3" y="14" width="7" height="7"></rect>
-                </svg></span> All Departments
-            </a>
-            <div class="collapse mt-2" id="collapseExample">
-              <div class="card card-body">
-                <ul class="mb-0 list-unstyled">
+            <div class="offcanvas-body">
+              <div class="d-block d-lg-none mb-4">
+                <div class="input-group ">
+                  <input class="form-control rounded" type="search" placeholder="Search for products">
+                  <span class="input-group-append">
+                    <button class="btn bg-white border border-start-0 ms-n10 rounded-0 rounded-end" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-search">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      </svg>
+                    </button>
+                  </span>
+                </div>
+                <div class="mt-2">
+                  <button type="button" class="btn  btn-outline-gray-400 text-muted w-100 " data-bs-toggle="modal"
+                    data-bs-target="#locationModal">
+                    <i class="feather-icon icon-map-pin me-2"></i>Pick Location
+                  </button>
+                </div>
+              </div>
+              <div class="d-block d-lg-none">
+                <a class="btn btn-primary w-100 d-flex justify-content-center align-items-center"
+                  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                  aria-controls="collapseExample">
+                  <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" class="feather feather-grid">
+                      <rect x="3" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="14" width="7" height="7"></rect>
+                      <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg></span> All Departments
+                </a>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <ul class="mb-0 list-unstyled">
+                      <li><a class="dropdown-item">Dairy, Bread & Eggs</a></li>
+                      <li><a class="dropdown-item">Snacks & Munchies</a></li>
+                      <li><a class="dropdown-item">Fruits & Vegetables</a></li>
+                      <li><a class="dropdown-item">Cold Drinks & Juices</a></li>
+                      <li><a class="dropdown-item">Breakfast & Instant Food</a></li>
+                      <li><a class="dropdown-item">Bakery & Biscuits</a></li>
+                      <li><a class="dropdown-item">Chicken, Meat & Fish</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown me-3 d-none d-lg-block">
+                <button class="btn btn-primary px-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <span class="me-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-grid">
+                      <rect x="3" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="14" width="7" height="7"></rect>
+                      <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg></span> All Departments
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item">Dairy, Bread & Eggs</a></li>
                   <li><a class="dropdown-item">Snacks & Munchies</a></li>
                   <li><a class="dropdown-item">Fruits & Vegetables</a></li>
@@ -179,252 +149,234 @@
                   <li><a class="dropdown-item">Chicken, Meat & Fish</a></li>
                 </ul>
               </div>
-            </div>
-          </div>
-          <div class="dropdown me-3 d-none d-lg-block">
-            <button class="btn btn-primary px-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span class="me-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-grid">
-                  <rect x="3" y="3" width="7" height="7"></rect>
-                  <rect x="14" y="3" width="7" height="7"></rect>
-                  <rect x="14" y="14" width="7" height="7"></rect>
-                  <rect x="3" y="14" width="7" height="7"></rect>
-                </svg></span> All Departments
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item">Dairy, Bread & Eggs</a></li>
-              <li><a class="dropdown-item">Snacks & Munchies</a></li>
-              <li><a class="dropdown-item">Fruits & Vegetables</a></li>
-              <li><a class="dropdown-item">Cold Drinks & Juices</a></li>
-              <li><a class="dropdown-item">Breakfast & Instant Food</a></li>
-              <li><a class="dropdown-item">Bakery & Biscuits</a></li>
-              <li><a class="dropdown-item">Chicken, Meat & Fish</a></li>
-            </ul>
-          </div>
-          <div class="">
-            <ul class="navbar-nav align-items-center navbar-offcanvas-color">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Home
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item">Home 1</a></li>
-                  <li><a class="dropdown-item" href="../../pages/index-2.html">Home 2</a></li>
-                  <li><a class="dropdown-item" href="../../pages/index-3.html">Home 3</a></li>
-                  <li><a class="dropdown-item" href="../../pages/index-4.html">Home 4</a></li>
-                  <li><a class="dropdown-item" href="../../pages/index-5.html">Home 5 <span
-                        class="badge bg-light-info text-dark-info ms-1">New</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Shop
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item">Shop Grid - Filter</a></li>
-                  <li><a class="dropdown-item" href="../../pages/shop-grid-3-column.html">Shop Grid - 3 column</a>
+              <div class="">
+                <ul class="navbar-nav align-items-center navbar-offcanvas-color">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Home
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item">Home 1</a></li>
+                      <li><a class="dropdown-item" href="../../pages/index-2.html">Home 2</a></li>
+                      <li><a class="dropdown-item" href="../../pages/index-3.html">Home 3</a></li>
+                      <li><a class="dropdown-item" href="../../pages/index-4.html">Home 4</a></li>
+                      <li><a class="dropdown-item" href="../../pages/index-5.html">Home 5 <span
+                            class="badge bg-light-info text-dark-info ms-1">New</span></a></li>
+                    </ul>
                   </li>
-                  <li><a class="dropdown-item" href="../../pages/shop-list.html">Shop List - Filter</a></li>
-                  <li><a class="dropdown-item" href="../../pages/shop-filter.html">Shop - Filter</a></li>
-                  <li><a class="dropdown-item" href="../../pages/shop-fullwidth.html">Shop Wide</a></li>
-                  <li><a class="dropdown-item" href="../../pages/shop-single.html">Shop Single</a></li>
-                  <li><a class="dropdown-item" href="../../pages/shop-single-2.html">Shop Single v2</a></li>
-                  <li><a class="dropdown-item" href="../../pages/shop-wishlist.html">Shop Wishlist</a></li>
-                  <li><a class="dropdown-item" href="../../pages/shop-cart.html">Shop Cart</a></li>
-                  <li><a class="dropdown-item" href="../../pages/shop-checkout.html">Shop Checkout</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Stores
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../../pages/store-list.html">Store List</a></li>
-                  <li><a class="dropdown-item" href="../../pages/store-grid.html">Store Grid</a></li>
-                  <li><a class="dropdown-item" href="../../pages/store-single.html">Store Single</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown dropdown-fullwidth">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Mega menu
-                </a>
-                <div class=" dropdown-menu pb-0">
-                  <div class="row p-2 p-lg-4">
-                    <div class="col-lg-3 col-6 mb-4 mb-lg-0">
-                      <h6 class="text-primary ps-3">Dairy, Bread & Eggs</h6>
-                      <a class="dropdown-item">Butter</a>
-                      <a class="dropdown-item">Milk Drinks</a>
-                      <a class="dropdown-item">Curd & Yogurt</a>
-                      <a class="dropdown-item">Eggs</a>
-                      <a class="dropdown-item">Buns & Bakery</a>
-                      <a class="dropdown-item">Cheese</a>
-                      <a class="dropdown-item">Condensed Milk</a>
-                      <a class="dropdown-item">Dairy Products</a>
-                    </div>
-                    <div class="col-lg-3 col-6 mb-4 mb-lg-0">
-                      <h6 class="text-primary ps-3">Breakfast & Instant Food</h6>
-                      <a class="dropdown-item">Breakfast Cereal</a>
-                      <a class="dropdown-item"> Noodles, Pasta & Soup</a>
-                      <a class="dropdown-item">Frozen Veg Snacks</a>
-                      <a class="dropdown-item"> Frozen Non-Veg Snacks</a>
-                      <a class="dropdown-item"> Vermicelli</a>
-                      <a class="dropdown-item"> Instant Mixes</a>
-                      <a class="dropdown-item"> Batter</a>
-                      <a class="dropdown-item"> Fruit and Juices</a>
-                    </div>
-                    <div class="col-lg-3 col-12 mb-4 mb-lg-0">
-                      <h6 class="text-primary ps-3">Cold Drinks & Juices</h6>
-                      <a class="dropdown-item">Soft Drinks</a>
-                      <a class="dropdown-item">Fruit Juices</a>
-                      <a class="dropdown-item">Coldpress</a>
-                      <a class="dropdown-item">Water & Ice Cubes</a>
-                      <a class="dropdown-item">Soda & Mixers</a>
-                      <a class="dropdown-item">Health Drinks</a>
-                      <a class="dropdown-item">Herbal Drinks</a>
-                      <a class="dropdown-item">Milk Drinks</a>
-                    </div>
-                    <div class="col-lg-3 col-12 mb-4 mb-lg-0">
-                      <div class="card border-0">
-                        <img src="./image/banner/menu-banner.jpg" alt="eCommerce HTML Template"
-                          class="img-fluid">
-                        <div class="position-absolute ps-6 mt-8">
-                          <h5 class=" mb-0 ">Dont miss this <br>offer today.</h5>
-                          <a href="#" class="btn btn-primary btn-sm mt-3">Shop Now</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item">Shop Grid - Filter</a></li>
+                      <li><a class="dropdown-item" href="../../pages/shop-grid-3-column.html">Shop Grid - 3 column</a>
+                      </li>
+                      <li><a class="dropdown-item" href="../../pages/shop-list.html">Shop List - Filter</a></li>
+                      <li><a class="dropdown-item" href="../../pages/shop-filter.html">Shop - Filter</a></li>
+                      <li><a class="dropdown-item" href="../../pages/shop-fullwidth.html">Shop Wide</a></li>
+                      <li><a class="dropdown-item" href="../../pages/shop-single.html">Shop Single</a></li>
+                      <li><a class="dropdown-item" href="../../pages/shop-single-2.html">Shop Single v2</a></li>
+                      <li><a class="dropdown-item" href="../../pages/shop-wishlist.html">Shop Wishlist</a></li>
+                      <li><a class="dropdown-item" href="../../pages/shop-cart.html">Shop Cart</a></li>
+                      <li><a class="dropdown-item" href="../../pages/shop-checkout.html">Shop Checkout</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Stores
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../../pages/store-list.html">Store List</a></li>
+                      <li><a class="dropdown-item" href="../../pages/store-grid.html">Store Grid</a></li>
+                      <li><a class="dropdown-item" href="../../pages/store-single.html">Store Single</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown dropdown-fullwidth">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Mega menu
+                    </a>
+                    <div class=" dropdown-menu pb-0">
+                      <div class="row p-2 p-lg-4">
+                        <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                          <h6 class="text-primary ps-3">Dairy, Bread & Eggs</h6>
+                          <a class="dropdown-item">Butter</a>
+                          <a class="dropdown-item">Milk Drinks</a>
+                          <a class="dropdown-item">Curd & Yogurt</a>
+                          <a class="dropdown-item">Eggs</a>
+                          <a class="dropdown-item">Buns & Bakery</a>
+                          <a class="dropdown-item">Cheese</a>
+                          <a class="dropdown-item">Condensed Milk</a>
+                          <a class="dropdown-item">Dairy Products</a>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                          <h6 class="text-primary ps-3">Breakfast & Instant Food</h6>
+                          <a class="dropdown-item">Breakfast Cereal</a>
+                          <a class="dropdown-item"> Noodles, Pasta & Soup</a>
+                          <a class="dropdown-item">Frozen Veg Snacks</a>
+                          <a class="dropdown-item"> Frozen Non-Veg Snacks</a>
+                          <a class="dropdown-item"> Vermicelli</a>
+                          <a class="dropdown-item"> Instant Mixes</a>
+                          <a class="dropdown-item"> Batter</a>
+                          <a class="dropdown-item"> Fruit and Juices</a>
+                        </div>
+                        <div class="col-lg-3 col-12 mb-4 mb-lg-0">
+                          <h6 class="text-primary ps-3">Cold Drinks & Juices</h6>
+                          <a class="dropdown-item">Soft Drinks</a>
+                          <a class="dropdown-item">Fruit Juices</a>
+                          <a class="dropdown-item">Coldpress</a>
+                          <a class="dropdown-item">Water & Ice Cubes</a>
+                          <a class="dropdown-item">Soda & Mixers</a>
+                          <a class="dropdown-item">Health Drinks</a>
+                          <a class="dropdown-item">Herbal Drinks</a>
+                          <a class="dropdown-item">Milk Drinks</a>
+                        </div>
+                        <div class="col-lg-3 col-12 mb-4 mb-lg-0">
+                          <div class="card border-0">
+                            <img src="./image/banner/menu-banner.jpg" alt="eCommerce HTML Template" class="img-fluid">
+                            <div class="position-absolute ps-6 mt-8">
+                              <h5 class=" mb-0 ">Dont miss this <br>offer today.</h5>
+                              <a href="#" class="btn btn-primary btn-sm mt-3">Shop Now</a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Pages
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../../pages/blog.html">Blog</a></li>
-                  <li><a class="dropdown-item" href="../../pages/blog-single.html">Blog Single</a></li>
-                  <li><a class="dropdown-item" href="../../pages/blog-category.html">Blog Category</a></li>
-                  <li><a class="dropdown-item" href="../../pages/about.html">About us</a></li>
-                  <li><a class="dropdown-item" href="../../pages/404error.html">404 Error</a></li>
-                  <li><a class="dropdown-item" href="../../pages/contact.html">Contact</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Account
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../../pages/signin.html">Sign in</a></li>
-                  <li><a class="dropdown-item" href="../../pages/signup.html">Signup</a></li>
-                  <li><a class="dropdown-item" href="../../pages/forgot-password.html">Forgot Password</a></li>
-                  <li class="dropdown-submenu dropend">
-                    <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
-                      My Account
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Pages
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../pages/account-orders.html">Orders</a></li>
-                      <li><a class="dropdown-item" href="../../pages/account-settings.html">Settings</a></li>
-                      <li><a class="dropdown-item" href="../../pages/account-address.html">Address</a></li>
-                      <li><a class="dropdown-item" href="../../pages/account-payment-method.html">Payment Method</a>
-                      </li>
-                      <li><a class="dropdown-item" href="../../pages/account-notification.html">Notification</a></li>
+                      <li><a class="dropdown-item" href="../../pages/blog.html">Blog</a></li>
+                      <li><a class="dropdown-item" href="../../pages/blog-single.html">Blog Single</a></li>
+                      <li><a class="dropdown-item" href="../../pages/blog-category.html">Blog Category</a></li>
+                      <li><a class="dropdown-item" href="../../pages/about.html">About us</a></li>
+                      <li><a class="dropdown-item" href="../../pages/404error.html">404 Error</a></li>
+                      <li><a class="dropdown-item" href="../../pages/contact.html">Contact</a></li>
                     </ul>
                   </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../../pages/signin.html">Sign in</a></li>
+                      <li><a class="dropdown-item" href="../../pages/signup.html">Signup</a></li>
+                      <li><a class="dropdown-item" href="../../pages/forgot-password.html">Forgot Password</a></li>
+                      <li class="dropdown-submenu dropend">
+                        <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                          My Account
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../../pages/account-orders.html">Orders</a></li>
+                          <li><a class="dropdown-item" href="../../pages/account-settings.html">Settings</a></li>
+                          <li><a class="dropdown-item" href="../../pages/account-address.html">Address</a></li>
+                          <li><a class="dropdown-item" href="../../pages/account-payment-method.html">Payment Method</a>
+                          </li>
+                          <li><a class="dropdown-item" href="../../pages/account-notification.html">Notification</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../dashboard/index.html">
+                      Dashboard
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown dropdown-flyout">
+                    <a class="nav-link" href="#" id="navbarDropdownDocs" role="button" data-bs-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Docs
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarDropdownDocs">
+                      <a class="dropdown-item align-items-start" href="../../docs/index.html">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-file-text text-primary" viewBox="0 0 16 16">
+                            <path
+                              d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z" />
+                            <path
+                              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                          </svg>
+                        </div>
+                        <div class="ms-3 lh-1">
+                          <h6 class="mb-1">Documentations</h6>
+                          <p class="mb-0 small">
+                            Browse the all documentation
+                          </p>
+                        </div>
+                      </a>
+                      <a class="dropdown-item align-items-start" href="../../docs/changelog.html">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-layers text-primary" viewBox="0 0 16 16">
+                            <path
+                              d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
+                          </svg>
+                        </div>
+                        <div class="ms-3 lh-1">
+                          <h6 class="mb-1">
+                            Changelog <span class="text-primary ms-1">v1.2.0</span>
+                          </h6>
+                          <p class="mb-0 small">See what's new</p>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../dashboard/index.html">
-                  Dashboard
-                </a>
-              </li>
-              <li class="nav-item dropdown dropdown-flyout">
-                <a class="nav-link" href="#" id="navbarDropdownDocs" role="button" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Docs
-                </a>
-                <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarDropdownDocs">
-                  <a class="dropdown-item align-items-start" href="../../docs/index.html">
-                    <div>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                        class="bi bi-file-text text-primary" viewBox="0 0 16 16">
-                        <path
-                          d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z" />
-                        <path
-                          d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-                      </svg>
-                    </div>
-                    <div class="ms-3 lh-1">
-                      <h6 class="mb-1">Documentations</h6>
-                      <p class="mb-0 small">
-                        Browse the all documentation
-                      </p>
-                    </div>
-                  </a>
-                  <a class="dropdown-item align-items-start" href="../../docs/changelog.html">
-                    <div>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                        class="bi bi-layers text-primary" viewBox="0 0 16 16">
-                        <path
-                          d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
-                      </svg>
-                    </div>
-                    <div class="ms-3 lh-1">
-                      <h6 class="mb-1">
-                        Changelog <span class="text-primary ms-1">v1.2.0</span>
-                      </h6>
-                      <p class="mb-0 small">See what's new</p>
-                    </div>
-                  </a>
-                </div>
-              </li>
-            </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Moble -->
+  
+    <!-- Login -->
+    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fs-3 fw-bold" id="userModalLabel">Sign Up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Name</label>
+                <input type="text" class="form-control form-control-color rounded bg-transparent w-100" id="fullName"
+                  placeholder="Enter Your Name" required="">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-color rounded bg-transparent w-100" id="email"
+                  placeholder="Enter Email address" required="">
+              </div>
+              <div class="mb-5">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control form-control-color rounded bg-transparent w-100"
+                  id="password" placeholder="Enter Password" required="">
+                <small class="form-text">By Signup, you agree to our <a href="#!">Terms of Service</a> & <a
+                    href="#!">Privacy Policy</a></small>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            Already have an account? <a href="#">Sign in</a>
           </div>
         </div>
       </div>
     </div>
-  </nav>
-  <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-4">
-        <div class="modal-header border-0">
-          <h5 class="modal-title fs-3 fw-bold" id="userModalLabel">Sign Up</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="fullName" class="form-label">Name</label>
-              <input type="text" class="form-control" id="fullName" placeholder="Enter Your Name" required="">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter Email address" required="">
-            </div>
-            <div class="mb-5">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="Enter Password" required="">
-              <small class="form-text">By Signup, you agree to our <a href="#!">Terms of Service</a> & <a
-                  href="#!">Privacy Policy</a></small>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign Up</button>
-          </form>
-        </div>
-        <div class="modal-footer border-0 justify-content-center">
-          Already have an account? <a href="#">Sign in</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Shop Cart -->
+    <!-- Shop Cart -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header border-bottom">
       <div class="text-start">
@@ -696,70 +648,12 @@
       </div>
     </div>
   </div>
-  <!-- Modal -->
-  <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body p-6">
-          <div class="d-flex justify-content-between align-items-start ">
-            <div>
-              <h5 class="mb-1" id="locationModalLabel">Choose your Delivery Location</h5>
-              <p class="mb-0 small">Enter your address and we will specify the offer you area. </p>
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="my-5">
-            <input type="search" class="form-control" placeholder="Search your area">
-          </div>
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <h6 class="mb-0">Select Location</h6>
-            <a href="#" class="btn btn-outline-gray-400 text-muted btn-sm">Clear All</a>
-          </div>
-          <div>
-            <div data-simplebar style="height:300px;">
-              <div class="list-group list-group-flush">
-                <a href="#"
-                  class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action active">
-                  <span>Alabama</span><span>Min:$20</span></a>
-                <a href="#"
-                  class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                  <span>Alaska</span><span>Min:$30</span></a>
-                <a href="#"
-                  class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                  <span>Arizona</span><span>Min:$50</span></a>
-                <a href="#"
-                  class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                  <span>California</span><span>Min:$29</span></a>
-                <a href="#"
-                  class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                  <span>Colorado</span><span>Min:$80</span></a>
-                <a href="#"
-                  class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                  <span>Florida</span><span>Min:$90</span></a>
-                <a href="#"
-                  class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                  <span>Arizona</span><span>Min:$50</span></a>
-                <a href="#"
-                  class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                  <span>California</span><span>Min:$29</span></a>
-                <a href="#"
-                  class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                  <span>Colorado</span><span>Min:$80</span></a>
-                <a href="#"
-                  class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                  <span>Florida</span><span>Min:$90</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Navba -->
+  </header>
 
+  <!-- End Nabar -->
 
   <!-- Start Section 1 -->
-  <section class="mt-10">
+  <section class="mt-10 mb-10">
     <div class="container-fluid">
       <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -804,7 +698,7 @@
   <!-- End Section 1 -->
 
   <!-- Start Section 2 -->
-  <section class="mt-10">
+  <section class="mt-10 mb-10">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 mb-6">
@@ -880,10 +774,8 @@
     </div>
   </section>
   <!-- End Section 2 -->
-
-
   <!-- Start Section 3 -->
-  <section class="mt-10">
+  <section class="mt-10 mb-10">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-md-6 mb-3 mb-lg-0">
@@ -919,11 +811,11 @@
       </div>
     </div>
   </section>
-  <!-- End Section -->
+  <!-- End Section 3-->
 
-  <!-- Start Section 3 -->
+  <!-- Start Section 4 -->
 
-  <section class="mt-10">
+  <section class="mt-10 mb-10">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 mb-6">
@@ -1376,204 +1268,9 @@
       </div>
     </div>
   </section>
-  <!-- End Section 3 -->
 
-  <!-- Start Section 4 -->
-
-  <section class="mt-10">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 mb-6">
-          <h3 class="mb-0">Daily Best Sells</h3>
-        </div>
-      </div>
-      <div class="table-responsive-xl pb-6">
-        <div class="row row-cols-lg-4 row-cols-1 row-cols-md-2 g-4 flex-nowrap">
-          <div class="col">
-            <div class=" pt-8 px-6 px-xl-8 rounded"
-              style="background:url(./image/banner/banner-deal.jpg)no-repeat; background-size: cover; height: 470px;">
-              <div>
-                <h3 class="fw-bold text-white">100% Organic
-                  Coffee Beans.
-                </h3>
-                <p class="text-white">Get the best deal before close.</p>
-                <a href="#!" class="btn btn-primary">Shop Now <i class="feather-icon icon-arrow-right ms-1"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card-product">
-              <div class="card-body">
-                <div class="text-center  position-relative "> <a href="./pages/shop-single.html"><img
-                      src="./image/products/product-img-11.jpg" alt="Grocery Ecommerce Template"
-                      class="mb-3 img-fluid"></a>
-
-                  <div class="card-product-action">
-                    <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
-                        class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Quick View"
-                        data-bs-original-title="Quick View"></i></a>
-                    <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist"
-                      data-bs-original-title="Wishlist"><i class="bi bi-heart"></i></a>
-                    <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare"
-                      data-bs-original-title="Compare"><i class="bi bi-arrow-left-right"></i></a>
-                  </div>
-                </div>
-                <div class="text-small mb-1"><a href="#!" class="text-decoration-none text-muted"><small>Tea, Coffee
-                      &amp;
-                      Drinks</small></a></div>
-                <h2 class="fs-6"><a href="./pages/shop-single.html" class="text-inherit text-decoration-none">Roast
-                    Ground Coffee</a></h2>
-
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                  <div><span class="text-dark">$13</span> <span
-                      class="text-decoration-line-through text-muted">$18</span>
-                  </div>
-                  <div>
-                    <small class="text-warning"> <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i>
-                    </small>
-                    <span><small>4.5</small></span>
-                  </div>
-                </div>
-                <div class="d-grid mt-2"><a href="#!" class="btn btn-primary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-plus">
-                      <line x1="12" y1="5" x2="12" y2="19"></line>
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                    </svg> Add to cart </a></div>
-                <div class="d-flex justify-content-start text-center mt-3">
-                  <div class="deals-countdown w-100" data-countdown="2028/10/10 00:00:00"><span
-                      class="countdown-section"><span class="countdown-amount hover-up">1808</span><span
-                        class="countdown-period"> days </span></span><span class="countdown-section"><span
-                        class="countdown-amount hover-up">22</span><span class="countdown-period"> hours
-                      </span></span><span class="countdown-section"><span
-                        class="countdown-amount hover-up">47</span><span class="countdown-period"> mins
-                      </span></span><span class="countdown-section"><span
-                        class="countdown-amount hover-up">43</span><span class="countdown-period"> sec </span></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card-product">
-              <div class="card-body">
-                <div class="text-center  position-relative "> <a href="./pages/shop-single.html"><img
-                      src="./image/products/product-img-12.jpg" alt="Grocery Ecommerce Template"
-                      class="mb-3 img-fluid"></a>
-                  <div class="card-product-action">
-                    <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
-                        class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Quick View"
-                        data-bs-original-title="Quick View"></i></a>
-                    <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist"
-                      data-bs-original-title="Wishlist"><i class="bi bi-heart"></i></a>
-                    <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare"
-                      data-bs-original-title="Compare"><i class="bi bi-arrow-left-right"></i></a>
-                  </div>
-                </div>
-                <div class="text-small mb-1"><a href="#!" class="text-decoration-none text-muted"><small>Fruits &amp;
-                      Vegetables</small></a></div>
-                <h2 class="fs-6"><a href="./pages/shop-single.html" class="text-inherit text-decoration-none">Crushed
-                    Tomatoes</a></h2>
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                  <div><span class="text-dark">$13</span> <span
-                      class="text-decoration-line-through text-muted">$18</span>
-                  </div>
-                  <div>
-                    <small class="text-warning"> <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i>
-                    </small>
-                    <span><small>4.5</small></span>
-                  </div>
-                </div>
-                <div class="d-grid mt-2"><a href="#!" class="btn btn-primary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-plus">
-                      <line x1="12" y1="5" x2="12" y2="19"></line>
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                    </svg> Add to cart </a></div>
-                <div class="d-flex justify-content-start text-center mt-3 w-100">
-                  <div class="deals-countdown w-100" data-countdown="2028/12/9 00:00:00"><span
-                      class="countdown-section"><span class="countdown-amount hover-up">1868</span><span
-                        class="countdown-period"> days </span></span><span class="countdown-section"><span
-                        class="countdown-amount hover-up">22</span><span class="countdown-period"> hours
-                      </span></span><span class="countdown-section"><span
-                        class="countdown-amount hover-up">47</span><span class="countdown-period"> mins
-                      </span></span><span class="countdown-section"><span
-                        class="countdown-amount hover-up">43</span><span class="countdown-period"> sec </span></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card-product">
-              <div class="card-body">
-                <div class="text-center  position-relative "> <a href="./pages/shop-single.html"><img
-                      src="./image/products/product-img-13.jpg" alt="Grocery Ecommerce Template"
-                      class="mb-3 img-fluid"></a>
-                  <div class="card-product-action">
-                    <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
-                        class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Quick View"
-                        data-bs-original-title="Quick View"></i></a>
-                    <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist"
-                      data-bs-original-title="Wishlist"><i class="bi bi-heart"></i></a>
-                    <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare"
-                      data-bs-original-title="Compare"><i class="bi bi-arrow-left-right"></i></a>
-                  </div>
-                </div>
-                <div class="text-small mb-1"><a href="#!" class="text-decoration-none text-muted"><small>Fruits &amp;
-                      Vegetables</small></a></div>
-                <h2 class="fs-6"><a href="./pages/shop-single.html" class="text-inherit text-decoration-none">Golden
-                    Pineapple</a></h2>
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                  <div><span class="text-dark">$13</span> <span
-                      class="text-decoration-line-through text-muted">$18</span>
-                  </div>
-                  <div>
-                    <small class="text-warning"> <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i></small>
-                    <span><small>4.5</small></span>
-                  </div>
-                </div>
-                <div class="d-grid mt-2"><a href="#!" class="btn btn-primary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-plus">
-                      <line x1="12" y1="5" x2="12" y2="19"></line>
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                    </svg> Add to cart </a></div>
-                <div class="d-flex justify-content-start text-center mt-3">
-                  <div class="deals-countdown w-100" data-countdown="2028/11/11 00:00:00"><span
-                      class="countdown-section"><span class="countdown-amount hover-up">1840</span><span
-                        class="countdown-period"> days </span></span><span class="countdown-section"><span
-                        class="countdown-amount hover-up">22</span><span class="countdown-period"> hours
-                      </span></span><span class="countdown-section"><span
-                        class="countdown-amount hover-up">47</span><span class="countdown-period"> mins
-                      </span></span><span class="countdown-section"><span
-                        class="countdown-amount hover-up">43</span><span class="countdown-period"> sec </span></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
   <!-- End Section 4 -->
+
   <!-- Start Section 5 -->
   <section class="my-lg-14 my-8">
     <div class="container-fluid">
@@ -1618,6 +1315,7 @@
     </div>
   </section>
   <!-- End Section 5 -->
+
   <!-- Start Footer  -->
   <footer class="footer">
     <div class="container-fluid">
@@ -1697,9 +1395,23 @@
   </footer>
   <!-- End Footer -->
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let element = document.body
+    function checkMode() {
+      element.dataset.bsTheme = element.dataset.bsTheme === "light" ? "dark" : "light"
+      localStorage.setItem("mode", element.dataset.bsTheme)
+    }
+    function darkModeOn() {
+      element.dataset.bsTheme = "dark"
+      localStorage.setItem("mode", element.dataset.bsTheme)
+    }
 
+    function darkModeOff() {
+      element.dataset.bsTheme = "light"
+      localStorage.setItem("mode", element.dataset.bsTheme)
+    }
+  </script>
 </body>
 
 </html>
