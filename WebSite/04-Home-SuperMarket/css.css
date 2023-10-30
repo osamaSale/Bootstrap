@@ -275,7 +275,7 @@ div.zoom img {
 }
 
 [data-bs-theme="dark"] {
-  --fc-body-color: #889397;
+  --fc-body-color: #98a1a4;
   --fc-body-color-rgb: 136, 147, 151;
   --fc-body-bg: #001e2b;
   --fc-body-bg-rgb: 0, 30, 43;
@@ -372,7 +372,7 @@ h3,
 h4,
 h5,
 h6 {
- 
+ color: var(--fc-body-color);
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 0.5rem;
@@ -6134,7 +6134,7 @@ fieldset:disabled .btn {
   flex-direction: column;
   list-style: none;
   margin-bottom: 0;
-  padding-left: 0;
+  padding-left: 6px;
 }
 
 .navbar-nav .nav-link.active,
@@ -6557,10 +6557,10 @@ fieldset:disabled .btn {
   --fc-navbar-toggler-border-color: hsla(0, 0%, 100%, 0.1);
 }
 
-.navbar-dark,
+ .navbar-dark,
 [data-bs-theme="dark"] .navbar-toggler-icon {
   --fc-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
+} 
 
 .card {
   --fc-card-spacer-y: 1rem;
@@ -7394,8 +7394,7 @@ fieldset:disabled .btn {
 }
 
 .list-group {
-  --fc-list-group-color: #001e2b;
-  --fc-list-group-bg: #fff;
+  
   --fc-list-group-border-color: var(--fc-gray-300);
   --fc-list-group-border-width: 1px;
   --fc-list-group-border-radius: 0.5rem;
@@ -7416,6 +7415,7 @@ fieldset:disabled .btn {
   flex-direction: column;
   margin-bottom: 0;
   padding-left: 0;
+
 }
 
 .list-group-numbered {
@@ -9629,9 +9629,9 @@ fieldset:disabled .btn {
 
 .offcanvas {
   background-clip: padding-box;
-  background-color: var(--fc-offcanvas-bg);
+  background-color: var(--fc-body-bg);
+  color: var(--fc-body-color);
   bottom: 0;
-  color: var(--fc-offcanvas-color);
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -13769,6 +13769,7 @@ fieldset:disabled .btn {
 
 .text-decoration-none {
   text-decoration: none !important;
+  color: var(--fc-primary);
 }
 
 .text-decoration-underline {
@@ -26629,6 +26630,7 @@ fieldset:disabled .btn {
 
 .navbar .navbar-nav .nav-item .nav-link {
   line-height: 1.8;
+  color: var(--fc-body-color);
 }
 
 @media (max-width: 992px) {
@@ -26808,7 +26810,7 @@ body {
 }
 
 a {
-  color: #0aad0a;
+  color: var(--fc-primary);
 }
 
 a,
@@ -28724,7 +28726,7 @@ input::-webkit-outer-spin-button {
 }
 
 .deals-countdown .countdown-section .countdown-amount {
-  color: var(--fc-dark);
+ 
   display: inline-block;
   font-weight: 500;
   height: 50px;
@@ -28732,7 +28734,7 @@ input::-webkit-outer-spin-button {
   line-height: 50px;
   margin-bottom: 15px;
   max-width: 100%;
-  width: 50px;
+  width: 59px;
 }
 
 .deals-countdown .countdown-section .countdown-period {
