@@ -372,7 +372,7 @@ h3,
 h4,
 h5,
 h6 {
- color: var(--fc-body-color);
+  color: var(--fc-body-color);
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 0.5rem;
@@ -664,13 +664,6 @@ select:disabled {
   display: none !important;
 }
 
-[type="button"],
-[type="reset"],
-[type="submit"],
-button {
-  -webkit-appearance: button;
-}
-
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
@@ -728,7 +721,6 @@ legend + * {
 }
 
 [type="search"] {
-  -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -741,7 +733,6 @@ legend + * {
 }
 
 ::file-selector-button {
-  -webkit-appearance: button;
   font: inherit;
 }
 
@@ -5933,7 +5924,8 @@ fieldset:disabled .btn {
 
 .nav-link:focus,
 .nav-link:hover {
-  color: var(--fc-nav-link-hover-color);
+  background-color: var(--fc-primary);
+  color: var(--fc-white);
 }
 
 .nav-link:focus-visible {
@@ -6557,10 +6549,10 @@ fieldset:disabled .btn {
   --fc-navbar-toggler-border-color: hsla(0, 0%, 100%, 0.1);
 }
 
- .navbar-dark,
+.navbar-dark,
 [data-bs-theme="dark"] .navbar-toggler-icon {
   --fc-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-} 
+}
 
 .card {
   --fc-card-spacer-y: 1rem;
@@ -7394,7 +7386,6 @@ fieldset:disabled .btn {
 }
 
 .list-group {
-  
   --fc-list-group-border-color: var(--fc-gray-300);
   --fc-list-group-border-width: 1px;
   --fc-list-group-border-radius: 0.5rem;
@@ -7415,7 +7406,6 @@ fieldset:disabled .btn {
   flex-direction: column;
   margin-bottom: 0;
   padding-left: 0;
-
 }
 
 .list-group-numbered {
@@ -26635,6 +26625,7 @@ fieldset:disabled .btn {
 @media (max-width: 992px) {
   .navbar .navbar-nav .nav-item .nav-link {
     border-bottom: 1px solid var(--fc-gray-200);
+    color: var(--fc-body-color);
   }
 }
 
@@ -28725,7 +28716,6 @@ input::-webkit-outer-spin-button {
 }
 
 .deals-countdown .countdown-section .countdown-amount {
- 
   display: inline-block;
   font-weight: 500;
   height: 50px;
@@ -29232,7 +29222,7 @@ table tr:last-child td {
 .slick-slider .slick-next,
 .slick-slider .slick-prev {
   align-items: center;
-  background-color: var(--fc-gray-200);
+  background-color: var(--fc-body-bg);
   border: 1px solid var(--fc-gray-200);
   border-radius: 50px;
   color: var(--fc-gray-500);
@@ -30960,7 +30950,6 @@ span.flatpickr-weekday {
   border: none;
   cursor: pointer;
   display: inline-block;
-  float: left;
   height: 24px;
   padding: 3px 5px;
   width: 28px;
@@ -31092,7 +31081,6 @@ span.flatpickr-weekday {
   border: none;
   cursor: pointer;
   display: inline-block;
-  float: left;
   height: 24px;
   padding: 3px 5px;
   width: 28px;
@@ -31411,7 +31399,6 @@ span.flatpickr-weekday {
 .ql-snow .ql-picker {
   color: var(--fc-gray-600);
   display: inline-block;
-  float: left;
   font-size: 14px;
   font-weight: 500;
   height: 24px;
