@@ -5906,7 +5906,7 @@ fieldset:disabled .btn {
 .nav-link {
   background: none;
   border: 0;
-  color: var(--fc-nav-link-color);
+  color: var(--fc-body-color);
   display: block;
   font-size: var(--fc-nav-link-font-size);
   font-weight: var(--fc-nav-link-font-weight);
@@ -13797,7 +13797,8 @@ fieldset:disabled .btn {
 
 .text-primary {
   --fc-text-opacity: 1;
-  color: rgba(var(--fc-primary-rgb), var(--fc-text-opacity)) !important;
+  color: var(--fc-body-color);
+/*   color: rgba(var(--fc-primary-rgb), var(--fc-text-opacity)) !important; */
 }
 
 .text-secondary {
