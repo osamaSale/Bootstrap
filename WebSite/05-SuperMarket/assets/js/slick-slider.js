@@ -1,6 +1,4 @@
-
-
-  "use strict";
+"use strict";
 $(".category-slider").length && $(".category-slider").slick({
     infinite: !0,
     slidesToShow: 6,
@@ -8,9 +6,9 @@ $(".category-slider").length && $(".category-slider").slick({
     autoplay: !0,
     dots: !1,
     arrows: !0,
-    prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
-    nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
-     responsive: [{
+        prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
+        nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
+    responsive: [{
         breakpoint: 1400,
         settings: {
             slidesToShow: 4,
@@ -37,8 +35,8 @@ $(".product-slider").length && $(".product-slider").slick({
     autoplay: !0,
     dots: !1,
     arrows: !0,
-    prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
-    nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
+        prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
+        nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
     responsive: [{
         breakpoint: 1400,
         settings: {
@@ -66,8 +64,8 @@ $(".team-slider").length && $(".team-slider").slick({
     autoplay: !0,
     dots: !1,
     arrows: !0,
-    prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
-    nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
+    prevArrow: '<span class="slick-prev"><i class="feather-icon icon-chevron-left"></i></span>',
+    nextArrow: '<span class="slick-next "><i class="feather-icon icon-chevron-right "></i></span>',
     responsive: [{
         breakpoint: 1024,
         settings: {
@@ -129,8 +127,8 @@ $(".slider-8-columns").length && $(".slider-8-columns").each(function(s, o) {
                 slidesToScroll: 1
             }
         }],
-        prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
-        nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
+        prevArrow: '<span class="slick-prev "><i class="feather-icon icon-chevron-left"></i></span>',
+        nextArrow: '<span class="slick-next "><i class="feather-icon icon-chevron-right "></i></span>',
         appendArrows: i
     })
 }),
@@ -167,8 +165,8 @@ $(".product-slider-second").length && $(".product-slider-second").each(function(
                 slidesToScroll: 1
             }
         }],
-        prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
-        nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
+        prevArrow: '<span class="slick-prev "><i class="feather-icon icon-chevron-left"></i></span>',
+        nextArrow: '<span class="slick-next"><i class="feather-icon icon-chevron-right "></i></span>',
         appendArrows: i
     })
 }),
@@ -196,8 +194,8 @@ $(".product-slider-four-column").length && $(".product-slider-four-column").slic
     autoplay: !0,
     dots: !1,
     arrows: !0,
-    prevArrow: '<span class="slick-prev "><i class="feather-icon icon-chevron-left"></i></span>',
-    nextArrow: '<span class="slick-next "><i class="feather-icon icon-chevron-right "></i></span>',
+        prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
+        nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
     responsive: [{
         breakpoint: 1400,
         settings: {
@@ -219,36 +217,25 @@ $(".product-slider-four-column").length && $(".product-slider-four-column").slic
     }]
 });
 
-$('.product-slider').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
+
+
+ $('.productModal').slick({
+    rtl: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.productThumbnails'
+});
+$('.productThumbnails').slick({
+    rtl: true,
     slidesToShow: 5,
     slidesToScroll: 1,
+    asNavFor: '.productModal',
     dots: false,
+    centerMode: true,
     infinite: true,
-    cssEase: 'linear',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                arrows: true,
-                centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: true,
-                centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 2
-            }
-        }
-    ],
+    arrows: true,
+    focusOnSelect: true
+ }); 
 
-    nextArrow: '<span class="slick-prev slick-arrow"><i class="fa fa-arrow-left"></i></span>',
-    prevArrow: '<span class="slick-next slick-arrow"><i class="fa fa-arrow-right"></i></span>',
-
-});
