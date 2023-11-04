@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="Codescandy" name="author">
     <title>01-Home </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
 
     <!-- Favicon icon-->
     <link rel="shortcut icon" type="image/x-icon"
@@ -24,6 +23,9 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
     <link rel="stylesheet" href="./assets/css/simplebar.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
 
 </head>
@@ -50,38 +52,38 @@
                         </div>
                     </div>
                     <div class="col-md-1 d-none d-lg-block">
-                        <button type="button" class="btn border rounded py-2 px-3  d-flex align-items-center"
+                        <a class="border py-2 px-3 rounded text-reset d-none d-lg-block"
                             data-bs-toggle="modal" data-bs-target="#locationModal">
                             <i class="fa-solid fa-location-dot me-2"></i> Location
-                        </button>
+                    </a>
                     </div>
                     <div class="col-md text-end d-none d-lg-block">
                         <div class="list-inline">
                             <div class="list-inline-item me-1">
-                                <button class="btn border rounded py-2 px-3  d-flex align-items-center"
-                                    data-bs-toggle="modal" data-bs-target="#userModal"> <i
-                                        class="fas fa-user-alt m-1 me-md-2"></i>
+                                <a class="border py-2 px-3 rounded text-reset d-flex align-items-center"
+                                    data-bs-toggle="modal" data-bs-target="#userModal"> 
+                                    <i class="fas fa-user-alt m-1 me-md-2"></i>
                                     <p class="d-none d-md-block mb-0">Sign in</p>
-                                </button>
+                                </a>
                             </div>
                             <div class="list-inline-item me-1">
-                                <button class="btn border rounded py-2 px-3  d-flex align-items-center"> <i
+                                <a class="border py-2 px-3 rounded text-reset d-flex align-items-center"> <i
                                         class="fas fa-heart m-1 me-md-2"></i>
                                     <p class="d-none d-md-block mb-0">Wishlist</p>
-                                </button>
+                                </a>
                             </div>
                             <div class="list-inline-item me-1">
-                                <button class="btn border rounded py-2 px-3  d-flex align-items-center"
+                                <a class="border py-2 px-3 rounded text-reset d-flex align-items-center"
                                     data-bs-target="#offcanvasRight" data-bs-toggle="offcanvas"> <i
                                         class="fas fa-shopping-cart m-1 me-md-2"></i>
                                     <p class="d-none d-md-block mb-0">My Cart</p>
-                                </button>
+                                </a>
                             </div>
                             <div class="list-inline-item me-1">
-                                <button class="btn border rounded py-2 px-3  d-flex align-items-center"
+                                <a class="border py-2 px-3 rounded text-reset d-flex align-items-center"
                                     onclick="checkMode()"> <i class="fa-regular fa-moon m-1 me-md-2"></i>
                                     <p class="d-none d-md-block mb-0">Dark</p>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -164,7 +166,7 @@
                             <div class="mt-2">
                                 <button type="button" class="btn  btn-outline-gray-400 text-muted w-100 "
                                     data-bs-toggle="modal" data-bs-target="#locationModal">
-                                    <i class="feather-icon icon-map-pin me-2"></i>Pick Location
+                                    <i class="fa-solid fa-location-dot me-2"></i>Pick Location
                                 </button>
                             </div>
                         </div>
@@ -835,7 +837,8 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div class="item"> <a class="text-decoration-none text-inherit">
+                    <div class="item"> 
+                        <a class="text-decoration-none text-inherit">
                             <div class="card card-product mb-lg-4">
                                 <div class="card-body text-center py-8">
                                     <img src="./assets/images/category/category-snack-munchies.jpg"
@@ -843,20 +846,23 @@
                                     <div class="text-truncate">Snack & Munchies</div>
                                 </div>
                             </div>
-                        </a></div>
-                    <div class="item"> <a class="text-decoration-none text-inherit">
+                        </a>
+                    </div>
+                    <div class="item"> 
+                        <a class="text-decoration-none text-inherit">
                             <div class="card card-product mb-lg-4">
                                 <div class="card-body text-center py-8">
-                                    <img src="assets/images/category/category-bakery-biscuits.jpg"
+                                    <img src="./assets/images/category/category-bakery-biscuits.jpg"
                                         alt="Grocery Ecommerce Template" class="mb-3">
                                     <div class="text-truncate">Bakery & Biscuits</div>
                                 </div>
                             </div>
-                        </a></div>
+                        </a>
+                    </div>
                     <div class="item"> <a class="text-decoration-none text-inherit">
                             <div class="card card-product mb-lg-4">
                                 <div class="card-body text-center py-8">
-                                    <img src="assets/images/category/category-instant-food.jpg"
+                                    <img src="./assets/images/category/category-instant-food.jpg"
                                         alt="Grocery Ecommerce Template" class="mb-3">
                                     <div class="text-truncate">Instant Food</div>
                                 </div>

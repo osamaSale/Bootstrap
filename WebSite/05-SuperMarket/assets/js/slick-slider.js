@@ -35,8 +35,8 @@ $(".product-slider").length && $(".product-slider").slick({
     autoplay: !0,
     dots: !1,
     arrows: !0,
-        prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
-        nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
+    prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
+    nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
     responsive: [{
         breakpoint: 1400,
         settings: {
@@ -64,8 +64,8 @@ $(".team-slider").length && $(".team-slider").slick({
     autoplay: !0,
     dots: !1,
     arrows: !0,
-    prevArrow: '<span class="slick-prev"><i class="feather-icon icon-chevron-left"></i></span>',
-    nextArrow: '<span class="slick-next "><i class="feather-icon icon-chevron-right "></i></span>',
+    prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
+    nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
     responsive: [{
         breakpoint: 1024,
         settings: {
@@ -127,9 +127,9 @@ $(".slider-8-columns").length && $(".slider-8-columns").each(function(s, o) {
                 slidesToScroll: 1
             }
         }],
-        prevArrow: '<span class="slick-prev "><i class="feather-icon icon-chevron-left"></i></span>',
-        nextArrow: '<span class="slick-next "><i class="feather-icon icon-chevron-right "></i></span>',
-        appendArrows: i
+        prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
+        nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
+         appendArrows: i
     })
 }),
 $(".product-slider-second").length && $(".product-slider-second").each(function(s, o) {
@@ -155,7 +155,7 @@ $(".product-slider-second").length && $(".product-slider-second").each(function(
         }, {
             breakpoint: 990,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         }, {
@@ -165,8 +165,8 @@ $(".product-slider-second").length && $(".product-slider-second").each(function(
                 slidesToScroll: 1
             }
         }],
-        prevArrow: '<span class="slick-prev "><i class="feather-icon icon-chevron-left"></i></span>',
-        nextArrow: '<span class="slick-next"><i class="feather-icon icon-chevron-right "></i></span>',
+        prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
+        nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
         appendArrows: i
     })
 }),
@@ -184,8 +184,8 @@ $(".slider-nav").slick({
     dots: !1,
     centerMode: !1,
     focusOnSelect: !0,
-    prevArrow: '<span class="slick-prev "><i class="feather-icon icon-chevron-left"></i></span>',
-    nextArrow: '<span class="slick-next "><i class="feather-icon icon-chevron-right "></i></span>'
+    prevArrow: '<span class="slick-prev "><i class="fa fa-arrow-left"></i></span>',
+    nextArrow: '<span class="slick-next "><i class="fa fa-arrow-right"></i></span>',
 })),
 $(".product-slider-four-column").length && $(".product-slider-four-column").slick({
     infinite: !0,
@@ -205,7 +205,7 @@ $(".product-slider-four-column").length && $(".product-slider-four-column").slic
     }, {
         breakpoint: 1200,
         settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1
         }
     }, {
