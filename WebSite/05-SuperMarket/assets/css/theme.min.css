@@ -5914,7 +5914,7 @@ fieldset:disabled .btn {
   --fc-pagination-padding-y: 0.5rem;
   --fc-pagination-font-size: 0.875rem;
   --fc-pagination-color: var(--fc-gray-500);
-  --fc-pagination-bg: var(--fc-card-bg);
+   --fc-pagination-bg: var(--fc-body-bg);
   --fc-pagination-border-width: 1px;
   --fc-pagination-border-color: var(--fc-border-color);
   --fc-pagination-border-radius: 0.5rem;
@@ -5928,7 +5928,7 @@ fieldset:disabled .btn {
   --fc-pagination-active-bg: #0aad0a;
   --fc-pagination-active-border-color: #0aad0a;
   --fc-pagination-disabled-color: var(--fc-gray-600);
-  --fc-pagination-disabled-bg: var(--fc-gray-200);
+  --fc-pagination-disabled-bg: var(--fc-body-bg);
   --fc-pagination-disabled-border-color: var(--fc-gray-200);
   display: flex;
   list-style: none;
@@ -23156,7 +23156,6 @@ input::-webkit-outer-spin-button {
   transition-duration: 0.3s;
 }
 #passwordToggler {
-  color: #001e2b;
   cursor: pointer;
   font-size: 16px;
   position: absolute;
@@ -23235,7 +23234,7 @@ input::-webkit-outer-spin-button {
   width: 280px;
 }
 .navbar-vertical-nav .navbar-vertical {
-  background-color: var(--fc-white);
+  background-color: var(--fc-body-bg);
   border-right: 1px dashed var(--fc-gray-300);
   display: flex;
   flex: 1 0 auto;
@@ -23255,7 +23254,7 @@ input::-webkit-outer-spin-button {
   padding: 0 16px;
 }
 .navbar-vertical-nav .navbar-vertical .navbar-nav .nav-item .nav-label {
-  color: var(--fc-gray-500);
+  color: var(--fc-body-color);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.5;
@@ -23265,7 +23264,7 @@ input::-webkit-outer-spin-button {
 .navbar-vertical-nav .navbar-vertical .navbar-nav .nav-item .nav-link {
   align-items: center;
   border-radius: var(--fc-border-radius);
-  color: var(--fc-gray-600);
+  color: var(--fc-body-color);
   display: flex;
   height: 48px;
   justify-content: flex-start;
@@ -23543,7 +23542,7 @@ input::-webkit-outer-spin-button {
 .navbar-glass {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  background-color: hsla(0, 0%, 100%, 0.8);
+  background-color: var(--fc-body-bg);
   background-image: none;
   box-shadow: none;
   box-sizing: border-box;
